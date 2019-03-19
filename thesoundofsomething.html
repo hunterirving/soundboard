@@ -1,0 +1,307 @@
+<html><head>
+    </head><body id="background"><audio id="yeh" src="yeh.wav" preload="auto"></audio>
+    <audio id="real" src="real.wav" preload="auto"></audio>
+    <audio id="talk" src="talk.wav" preload="auto"></audio>
+    <audio id="tss" src="tss.wav" preload="auto"></audio>
+    <audio id="minty" src="minty.wav" preload="auto"></audio>
+    <audio id="budda" src="budda.wav" preload="auto"></audio>
+    <audio id="bam" src="bam.wav" preload="auto"></audio>
+    <audio id="boop" src="boop.wav" preload="auto"></audio>
+    <audio id="bop" src="bop.wav" preload="auto"></audio>
+    <audio id="pff" src="pff.wav" preload="auto"></audio>
+    <audio id="ooh" src="ooh.wav" preload="auto"></audio>
+    <audio id="ohh" src="ohh.wav" preload="auto"></audio>
+    <audio id="hoohf" src="hoohf.wav" preload="auto"></audio>
+    <audio id="unh" src="unh.wav" preload="auto"></audio>
+    <audio id="ahhn" src="ahhn.wav" preload="auto"></audio>
+    <audio id="o" src="o.wav" preload="auto"></audio>
+    <audio id="kayyy" src="kayyy.wav" preload="auto"></audio>
+    <audio id="listen" src="listen.wav" preload="auto"></audio>
+    <audio id="to" src="to.wav" preload="auto"></audio>
+    <audio id="this" src="this.wav" preload="auto"></audio>
+    <audio id="damn" src="damn.wav" preload="auto"></audio>
+    <audio id="son" src="son.wav" preload="auto"></audio>
+    <audio id="whered" src="whered.wav" preload="auto"></audio>
+    <audio id="ju" src="ju.wav" preload="auto"></audio>
+    <audio id="find" src="find.wav" preload="auto"></audio>
+
+
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <style>
+      @media screen and (orientation: portrait) {
+        #background {
+          background-color:BlanchedAlmond;
+          margin: 1vw;
+          margin-top: 2vw;
+        }
+        #pad {
+          background-color:#333333;
+          height:90vw;
+          width:92vw;
+
+          border-radius: 2vw;
+          box-shadow: 0 5vw #222222;
+          margin: auto; position: relative; text-align:center;
+        }
+        #row {
+          width: 92vw;
+
+
+
+        }
+        button {
+          width: 13.5vw;
+          height: 13.5vw;
+          cursor: pointer;
+          outline: none;
+          color: #fff;
+          background-color: #FFFFFF;
+          border: none;
+          border-radius: 1vw;
+          box-shadow: 0 1.5vw #BBBBBB;
+          animation-iteration-count: infinite;
+
+
+          margin-top: 3.5vw;
+          margin-left:1.4vw;
+          margin-right:1.4vw;
+
+          transition: transform 0.05s, box-shadow 0.05s, background-color 0.2s;
+        }
+        .depressed {
+          background-color: PaleGreen;
+          box-shadow: 0 0.5vw #888888;
+          transform: translateY(1vw);
+        }
+      }
+      @media screen and (orientation: landscape) {
+        #background {
+          background-color:BlanchedAlmond;
+          margin: 1vh;
+          margin-top: 2vh;
+        }
+        #pad {
+          background-color:#333333;
+          height:90vh;
+          width:92vh;
+
+          border-radius: 2vh;
+          box-shadow: 0 5vh #222222;
+          margin: auto; position: relative; text-align:center;
+        }
+        #row {
+          width: 92vh;
+
+
+
+        }
+        button {
+          width: 13.5vh;
+          height: 13.5vh;
+          cursor: pointer;
+          outline: none;
+          color: #fff;
+          background-color: #FFFFFF;
+          border: none;
+          border-radius: 1vh;
+          box-shadow: 0 1.5vh #BBBBBB;
+          animation-iteration-count: infinite;
+
+
+          margin-top: 3.5vh;
+          margin-left:1.4vh;
+          margin-right:1.4vh;
+
+          transition: transform 0.05s, box-shadow 0.05s, background-color 0.2s;
+        }
+        .depressed {
+          background-color: PaleGreen;
+          box-shadow: 0 0.5vh #888888;
+          transform: translateY(1vh);
+        }
+      }
+    </style>
+
+
+    <div id="pad">
+      <div id="row">
+        <button id="00" class="button" onpointerdown="depress(id)" onpointerup="release(id)" onpointerleave="release(id)"></button>
+        <button id="01" class="button" onpointerdown="depress(id)" onpointerup="release(id)" onpointerleave="release(id)"></button>
+        <button id="02" class="button" onpointerdown="depress(id)" onpointerup="release(id)" onpointerleave="release(id)"></button>
+        <button id="03" class="button" onpointerdown="depress(id)" onpointerup="release(id)" onpointerleave="release(id)"></button>
+        <button id="04" class="button" onpointerdown="depress(id)" onpointerup="release(id)" onpointerleave="release(id)"></button>
+      </div>
+      <div id="row">
+        <button id="10" class="button" onpointerdown="depress(id)" onpointerup="release(id)" onpointerleave="release(id)"></button>
+        <button id="11" class="button" onpointerdown="depress(id)" onpointerup="release(id)" onpointerleave="release(id)"></button>
+        <button id="12" class="button" onpointerdown="depress(id)" onpointerup="release(id)" onpointerleave="release(id)"></button>
+        <button id="13" class="button" onpointerdown="depress(id)" onpointerup="release(id)" onpointerleave="release(id)"></button>
+        <button id="14" class="button" onpointerdown="depress(id)" onpointerup="release(id)" onpointerleave="release(id)"></button>
+      </div>
+      <div id="row">
+        <button id="20" class="button" onpointerdown="depress(id)" onpointerup="release(id)" onpointerleave="release(id)"></button>
+        <button id="21" class="button" onpointerdown="depress(id)" onpointerup="release(id)" onpointerleave="release(id)"></button>
+        <button id="22" class="button" onpointerdown="depress(id)" onpointerup="release(id)" onpointerleave="release(id)"></button>
+        <button id="23" class="button" onpointerdown="depress(id)" onpointerup="release(id)" onpointerleave="release(id)"></button>
+        <button id="24" class="button" onpointerdown="depress(id)" onpointerup="release(id)" onpointerleave="release(id)"></button>
+      </div>
+      <div id="row">
+        <button id="30" class="button" onpointerdown="depress(id)" onpointerup="release(id)" onpointerleave="release(id)"></button>
+        <button id="31" class="button" onpointerdown="depress(id)" onpointerup="release(id)" onpointerleave="release(id)"></button>
+        <button id="32" class="button" onpointerdown="depress(id)" onpointerup="release(id)" onpointerleave="release(id)"></button>
+        <button id="33" class="button" onpointerdown="depress(id)" onpointerup="release(id)" onpointerleave="release(id)"></button>
+        <button id="34" class="button" onpointerdown="depress(id)" onpointerup="release(id)" onpointerleave="release(id)"></button>
+      </div>
+      <div id="row">
+        <button id="40" class="button" onpointerdown="depress(id)" onpointerup="release(id)" onpointerleave="release(id)"></button>
+        <button id="41" class="button" onpointerdown="depress(id)" onpointerup="release(id)" onpointerleave="release(id)"></button>
+        <button id="42" class="button" onpointerdown="depress(id)" onpointerup="release(id)" onpointerleave="release(id)"></button>
+        <button id="43" class="button" onpointerdown="depress(id)" onpointerup="release(id)" onpointerleave="release(id)"></button>
+        <button id="44" class="button" onpointerdown="depress(id)" onpointerup="release(id)" onpointerleave="release(id)"></button>
+      </div>
+    </div>
+    <script>
+      document.addEventListener('contextmenu', event => event.preventDefault());
+
+      function depress(id) {
+        document.getElementById(id).classList.add('depressed');
+        playSound(id);
+      }
+
+      function release(id) {
+        document.getElementById(id).classList.remove('depressed'); //undo the transition
+      }
+
+      function playSound(id) {
+        switch (id) {
+          case "00":
+            var audio = document.createElement('audio');
+            audio.src = 'yeh.wav';
+            audio.play();
+            break;
+          case "01":
+          var audio = document.createElement('audio');
+          audio.src = 'real.wav';
+          audio.play();
+            break;
+          case "02":
+          var audio = document.createElement('audio');
+          audio.src = 'talk.wav';
+          audio.play();
+            break;
+          case "03":
+          var audio = document.createElement('audio');
+          audio.src = 'tss.wav';
+          audio.play();
+            break;
+          case "04":
+          var audio = document.createElement('audio');
+          audio.src = 'minty.wav';
+          audio.play();
+            break;
+          case "10":
+          var audio = document.createElement('audio');
+          audio.src = 'budda.wav';
+          audio.play();
+            break;
+          case "11":
+          var audio = document.createElement('audio');
+          audio.src = 'bam.wav';
+          audio.play();
+            break;
+          case "12":
+          var audio = document.createElement('audio');
+          audio.src = 'boop.wav';
+          audio.play();
+            break;
+          case "13":
+          var audio = document.createElement('audio');
+          audio.src = 'bop.wav';
+          audio.play();
+            break;
+          case "14":
+          var audio = document.createElement('audio');
+          audio.src = 'pff.wav';
+          audio.play();
+            break;
+          case "20":
+          var audio = document.createElement('audio');
+          audio.src = 'ooh.wav';
+          audio.play();
+            break;
+          case "21":
+          var audio = document.createElement('audio');
+          audio.src = 'ohh.wav';
+          audio.play();
+            break;
+          case "22":
+          var audio = document.createElement('audio');
+          audio.src = 'hoohf.wav';
+          audio.play();
+            break;
+          case "23":
+          var audio = document.createElement('audio');
+          audio.src = 'unh.wav';
+          audio.play();
+            break;
+          case "24":
+          var audio = document.createElement('audio');
+          audio.src = 'ahhn.wav';
+          audio.play();
+            break;
+          case "30":
+          var audio = document.createElement('audio');
+          audio.src = 'o.wav';
+          audio.play();
+            break;
+          case "31":
+          var audio = document.createElement('audio');
+          audio.src = 'kayyy.wav';
+          audio.play();
+            break;
+          case "32":
+          var audio = document.createElement('audio');
+          audio.src = 'listen.wav';
+          audio.play();
+            break;
+          case "33":
+          var audio = document.createElement('audio');
+          audio.src = 'to.wav';
+          audio.play();
+            break;
+          case "34":
+          var audio = document.createElement('audio');
+          audio.src = 'this.wav';
+          audio.play();
+            break;
+          case "40":
+          var audio = document.createElement('audio');
+          audio.src = 'damn.wav';
+          audio.play();
+            break;
+          case "41":
+          var audio = document.createElement('audio');
+          audio.src = 'son.wav';
+          audio.play();
+            break;
+          case "42":
+          var audio = document.createElement('audio');
+          audio.src = 'whered.wav';
+          audio.play();
+            break;
+          case "43":
+          var audio = document.createElement('audio');
+          audio.src = 'ju.wav';
+          audio.play();
+            break;
+          case "44":
+          var audio = document.createElement('audio');
+          audio.src = 'find.wav';
+          audio.play();
+            break;
+          }
+      }
+    </script>
+
+
+</body></html>

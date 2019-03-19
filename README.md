@@ -1,4 +1,4 @@
-## The hills are alive, with the sound of... something.
+## The hills are alive.. with the sound of... something.
 
 A 25 button sound board, meant for use with touchscreen devices.
 
